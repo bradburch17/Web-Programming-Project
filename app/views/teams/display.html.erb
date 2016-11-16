@@ -1,0 +1,20 @@
+<h1>Teams</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Opponent</th>
+			<th>Score</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	<% @team.each do | team | %>
+		<tr>
+			<td><%= team.name %></td>
+			<td><%= team.opponent %></td>
+			<td><%= team.score %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

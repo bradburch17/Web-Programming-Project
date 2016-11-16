@@ -1,0 +1,14 @@
+<%provide(:title, 'Enter Team Information') %>
+<h1>Enter Team Informaion</h1>
+<%=form_for(@team) do |f| %>
+	<%= f.label :name %> <br />
+	<%= f.text_field :name %><br />
+
+	<%= f.label :opponent %> <br />
+	<%= f.text_field :opponent %><br />
+
+	<%= f.label :score %> <br />
+	<%= f.text_field :score %><br />
+
+	<%= f.submit "Submit Team Information" %>
+<%end%>

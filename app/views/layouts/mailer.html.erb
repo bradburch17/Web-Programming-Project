@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <style>
+            /* Email styles need to be inline */
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <div id="header">
+              <h1><a href="index.html"><img src="logo.jpg" style="width:200px;height:200px;" align="middle"></a>DePauw Chapter</h1>
+                <ul>
+                    <li><%= link_to "Count", :controller => 'main', :action => 'count' %></li>
+                    <li><%= link_to "Author", :controller => 'main', :action => 'author' %></li>
+                    <li class="last"><%= link_to "Zeros", :controller => 'main', :action => 'ping' %></li>
+                </ul>
+            </div>
+        </header>
+
+        <%= yield %>
+    </body>
+</html>

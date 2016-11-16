@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project2</title>
+        <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    <body>
+
+        <header>
+            <div id="header">
+                <h1><%= image_tag "logo.jpg", :width => "75px", :height => "auto" %>DePauw IMs</h1>
+                <ul>
+                    <li><%= link_to "About", :controller => 'about', :action => 'about' %></li>
+                    <li><%= link_to "Score Forms", :controller => 'scores', :action => 'new' %></li>
+                    <li><%= link_to "Scores", :controller => 'scores', :action => 'display' %></li>
+                    <li><%= link_to "Team Forms", :controller => 'teams', :action => 'new' %></li>
+                    <li class="last"><%= link_to "Teams", :controller => 'teams', :action => 'display' %></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%=message %></div>
+        <%end%>
+        <%= yield %>
+        </div>
+        <div class="footer">
+            <p><%= image_tag "logo.jpg", :width => "75px", :height => "auto" %>By: Brad Burch, Abbey Buroker, Julia Waggoner</p>
+        </div>
+    </body>
+</html>

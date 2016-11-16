@@ -1,0 +1,213 @@
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+
+/* Header */
+
+#header {
+    color: darkblue;
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    list-style: none;
+    display: inline;
+    text-align: center;
+    background: #FDFDFD;
+}
+
+#header li {
+    display: inline;
+    margin-right: 0.5em;
+    padding-right: 0.75em;
+    border-right: 1px solid #99C;
+    font-weight: bold;
+    background-color: grey;
+    color: gold;
+}
+
+#header ul {
+    background-color: grey;
+    padding: 1.5em;
+    margin: 0;
+}
+
+#header li.last {
+    border-right: 0;
+}
+
+
+/* Color of links in header */
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: #DFDFDF;
+}
+
+
+/* Banner */
+
+#banner {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 93%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    /*border: 2px solid darkblue;*/
+    text-align: center;
+    /*background-color: #ECEDF3;*/
+    color: gold;
+    font-family: "helvetica neue";
+}
+
+#header h1 {
+    color: black;
+}
+
+
+/* Body */
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 60rem;
+    min-height: 100%;
+}
+
+#abbeyimage {
+    float: left;
+    margin: 2em;
+    width: 40%;
+    padding-bottom: 30em;
+}
+
+#floatleft {
+    float: left;
+}
+
+#rightofabbey {
+    margin-top: 1em;
+    font-family: "helvetica neue";
+}
+
+.blue {
+    color: darkblue;
+}
+
+.grey {
+    color: #646779;
+}
+
+
+/* About */
+
+#aboutpg {
+    text-align: center;
+    color: #646779;
+    font-family: "helvetica neue";
+    padding: 5em;
+    list-style: none;
+    display: inline;
+    margin: 5em;
+}
+
+#aboutcont {
+    text-align: center;
+    margin-top: 1em;
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.statisticsul {
+    padding: 0;
+    margin: 0;
+}
+
+.statisticsli {
+    display: inline;
+    margin-right: 0.5em;
+    padding-right: 0.75em;
+    border-right: 1px solid #99C;
+    font-weight: bold;
+    color: #646779;
+}
+
+.statisticslilast {
+    display: inline;
+    margin-right: 0.5em;
+    padding-right: 0.75em;
+    border-right: 0;
+    font-weight: bold;
+    color: #646779;
+}
+
+#statid {
+    background: darkblue;
+}
+
+
+/* Philanthropy */
+
+.phillist {
+    margin-top: 5px;
+    margin-left: 10px;
+    border-right: 2px solid darkblue;
+    text-align: center;
+    width: 30%;
+    font-family: "helvetica neue";
+    color: darkblue;
+    line-height: 2em;
+    float: left;
+    font-weight: bold;
+}
+
+.phillist li {
+    list-style-type: none;
+    color: gray;
+}
+
+.philcont {
+    float: left;
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 0px;
+    color: gray;
+}
+
+.philcont h2 {
+    color: darkblue;
+}
+
+.philpic {
+    float: left;
+    margin-left: 40px;
+}
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 16px;
+    list-style: none;
+    display: inline;
+    text-align: center;
+    color: black;
+    background: #FDFDFD;
+}
