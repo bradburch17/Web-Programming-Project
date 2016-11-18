@@ -1,0 +1,24 @@
+<h1 id="top">Team Records</h1>
+<table style="width:45%">
+	<thead>
+		<tr>
+			<th>Sport</th>
+			<th>Team</th>
+			<th>Team Score</th>
+			<th>Opponent</th>
+			<th>Opponent Score</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	<% @record.each do | record | %>
+		<tr>
+		    <td><%=record.sport%></td>
+			<td><%= record.team %></td>
+			<td><%= record.teamScore %></td>
+			<td><%= record.opponent %></td>
+			<td><%= record.opponentScore %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

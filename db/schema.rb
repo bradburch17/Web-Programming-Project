@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161116011631) do
+ActiveRecord::Schema.define(version: 20161117001345) do
+
+  create_table "histories", force: :cascade do |t|
+    t.integer  "year"
+    t.string   "sport"
+    t.string   "winningTeam"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.string   "team"
+    t.string   "opponent"
+    t.integer  "teamScore"
+    t.integer  "opponentScore"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "sport"
+  end
 
   create_table "scores", force: :cascade do |t|
     t.integer  "team"

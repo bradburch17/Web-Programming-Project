@@ -1,6 +1,7 @@
 #container {
     min-height: 100%;
     position: relative;
+    padding-bottom: 40px;
 }
 
 
@@ -81,7 +82,7 @@ a:hover {
 body {
     position: relative;
     margin: 0;
-    padding-bottom: 60rem;
+    padding-bottom: 15rem;
     min-height: 100%;
 }
 
@@ -153,53 +154,59 @@ body {
     color: #646779;
 }
 
-#statid {
-    background: darkblue;
+.head{
+    color: black;
+    margin-left: 30px;
 }
+.image{
+    margin-left: 25%;
 
-
-/* Philanthropy */
-
-.phillist {
-    margin-top: 5px;
-    margin-left: 10px;
-    border-right: 2px solid darkblue;
-    text-align: center;
-    width: 30%;
-    font-family: "helvetica neue";
-    color: darkblue;
-    line-height: 2em;
-    float: left;
-    font-weight: bold;
 }
-
-.phillist li {
-    list-style-type: none;
+.head2{
+    color: gray;
+    margin-left: 30px;
+}
+.para{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: gold;
+    padding: 2em;
     color: gray;
 }
 
-.philcont {
+.col1{
+    padding: .5em;
+}
+.tableStyle{
+    float:left;
+    padding-bottom: 4em;
+    margin-bottom: 150px;
+}
+.historyImage{
+    float: right;
+    margin: 0, 0, 10px, 10px;
+    margin-right: 2.5em;
+}
+.historyImage2{
+    float: right;
+    margin: 0, 0, 10px, 10px;
+    margin-right: 2.3em;
+    margin-bottom: 4em;
+}
+.imageHome{
     float: left;
-    width: 40%;
-    margin-left: 10px;
-    margin-top: 0px;
-    color: gray;
+    margin-left: 2em;
+    margin-bottom: 4em;
 }
-
-.philcont h2 {
-    color: darkblue;
+.imageHome2{
+    float: right;
+    margin-right: 2em;
+    margin-bottom: 4em;
 }
-
-.philpic {
-    float: left;
-    margin-left: 40px;
-}
-
-
 /* Footer */
 
 .footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;

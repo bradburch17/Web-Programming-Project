@@ -1,0 +1,24 @@
+<h1>History</h1>
+<table class="tableStyle" style="width:45%">
+	<thead>
+		<tr>
+			<th>Year</th>
+			<th>Sport</th>
+			<th>Winning Team</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	<% @history.each do | history | %>
+		<tr>
+			<td class="col1"><%= history.year %></td>
+			<td><%= history.sport %></td>
+			<td><%= history.winningTeam %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+ <h1 class="historyImage" text-align:center><%= image_tag "team1.jpg", :width => "400px", :height => "auto" %></h1>
+ <h1 class="historyImage" text-align:center><%= image_tag "team2.JPG", :width => "400px", :height => "auto" %></h1>
+ <h1 class="historyImage2" text-align:center><%= image_tag "team3.jpg", :width => "400px", :height => "auto" %></h1>
